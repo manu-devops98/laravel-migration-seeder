@@ -18,13 +18,14 @@ class TrainController extends Controller
     {
         $train = new Train();
         $train->fill([
-            'agency' => 'Getras Srl',
-            'departure' => 'Ragusa',
-            'arrival' => 'Scicli',
-            'departure_time' => '18.30',
-            'arrival_time' => '20.00',
-            'code' => 'POEWRT35481S',
-            'carriage' => 3,
+            'agency' => '	Trenitalia SpA',
+            'departure' => 'Bari Centrale',
+            'arrival' => 'Roma Termini',
+            'departure_time' => '16.40',
+            'arrival_time' => '18.00',
+            'code' => 'HDTEY257OP98 ',
+            'carriage' => 6,
+            'date' => '2022/02/18',
             'in_time' => true,
             'deleted' => false,
         ]);

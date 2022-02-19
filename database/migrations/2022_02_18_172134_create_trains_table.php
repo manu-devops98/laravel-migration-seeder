@@ -29,6 +29,8 @@ class CreateTrainsTable extends Migration
             $table->string('code', 12);
             // Numero Carrozze
             $table->integer('carriage');
+            // Data 
+            $table->date('date');
             // In orario
             $table->boolean('in_time');
             // Cancellato

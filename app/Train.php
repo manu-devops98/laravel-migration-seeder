@@ -14,6 +14,7 @@ class Train extends Model
         'arrival_time', //string
         'code', //string
         'carriage', //int
+        'date', //date
         'in_time', //bool
         'deleted', //bool
     ];
