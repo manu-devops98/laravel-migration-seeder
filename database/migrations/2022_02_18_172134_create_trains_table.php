@@ -26,7 +26,7 @@ class CreateTrainsTable extends Migration
             // Orario di arrivo
             $table->string('arrival_time', 10);
             // Codice Treno
-            $table->string('code', 12);
+            $table->string('code', 13);
             // Numero Carrozze
             $table->integer('carriage');
             // Data 

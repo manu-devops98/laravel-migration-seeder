@@ -15,9 +15,9 @@
             <h1>Codice viaggio: {{$itemTrain->code}}</h1>
             <h3>Numero carrozza: {{$itemTrain->carriage}}</h3>
             <h2>Data: {{$itemTrain->date}}</h2>
-
-
+            <a href="{{ route('train.show', $itemTrain )}}">Info biglietto viaggio</a>
         </div>
         @endforeach
+        {{ $train->links()}}
     </div>
 @endsection

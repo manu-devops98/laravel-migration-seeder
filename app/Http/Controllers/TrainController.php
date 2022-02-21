@@ -9,7 +9,8 @@ class TrainController extends Controller
 {
     public function index()
     {
-        $train = Train::orderBy('departure_time', 'asc')->get();
+        // $train = Train::orderBy('departure_time', 'asc')->get();
+        $train = Train::paginate(10);
         $data = ['train' => $train];
         return view('home', $data);
     }
@@ -32,5 +33,10 @@ class TrainController extends Controller
 
         $result = $train->save();
         dd($train, $result);
+    }
+
+    public function show(Train $train)
+    {
+        return view('show', compact('train'));
     }
 }
